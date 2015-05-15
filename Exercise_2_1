@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+if(defined($input = <STDIN>)) {
+    $round = 2 * 3.141592654 * $input;
+    print "The length of the round is $round\n";
+}
+else {
+    print "No input\n";
+}

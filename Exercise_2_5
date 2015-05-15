@@ -1,0 +1,11 @@
+#!/usr/bin/perl1
+
+print "Input a word and a number in different lines:\n";
+chomp($word = <STDIN>);
+$number = <STDIN>;
+if(defined($word) && defined($number)) {
+    print "The output is ".(($word) x $number)."\n";
+}
+else {
+    print "No input available\n";
+}

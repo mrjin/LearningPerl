@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+print "Input two numbers:";
+$num1 = <STDIN>;
+$num2 = <STDIN>;
+if(defined($num1) && defined($num2)) {
+    print "The sum of the numbers is ".($num1 + $num2)."\n";
+}
+else {
+    print "No input avaliable.\n";
+}
+
