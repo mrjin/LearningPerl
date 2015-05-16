@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+chomp(@lines = <STDIN>);
+@sortedLines = sort @lines;
+
+foreach $line (@sortedLines) {
+    print($line.' ');
+}
+print("\n");
+
+foreach $line (@sortedLines) {
+    print($line."\n");
+}
+

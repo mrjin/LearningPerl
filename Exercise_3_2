@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+@names = qw (fred betty barney dino wilma pebbles bamm-bamm);
+chmod(@inputNum = <STDIN>);
+foreach $input (@inputNum) {
+    if($input < @names || $input > -@names) {
+        print($names[$input]."\n");
+    }
+    else {
+        print("Out of Range");
+    }
+}
