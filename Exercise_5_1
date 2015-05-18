@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+use autodie;
+
+#Also , you can use print reverse <>
+
+@reverseARGV = reverse @ARGV;
+for $file (@reverseARGV) {
+    open FILE, '<', $file;
+    @fileLines = <FILE>;
+    @reverseFileLine = reverse @fileLines;
+    print @reverseFileLine;
+    close FILE;
+}
+
