@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+my %namedict = (
+    'fred' => 'flintstone',
+    'barney' => 'rubble',
+    'wilma' => 'flintstone',
+);
+
+chomp($name = <STDIN>);
+if(exists $namedict{$name}) {
+    print $namedict{$name},"\n";
+}else{
+    print "$name NOT EXISTS!\n";
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+my @keys = keys %ENV;
+@keys = sort @keys;
+my $longest_key = 0;
+foreach $key (@keys) {
+    my $key_length = length($key);
+    $longest_key = $key_length if $key_length > $longest_key;
+}
+
+foreach $key (@keys) {
+    printf("%-${longest_key}s %s\n", $key ,$ENV{$key});
+}
